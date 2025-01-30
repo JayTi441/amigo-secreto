@@ -1,26 +1,20 @@
+let amigos = [];
+
+let lista = document.getElementById("listaAmigos");
+let res = document.getElementById("resultado");
+
 function agregarAmigo(){
-    let amigos = [];
-
     let entrada = document.getElementById('amigo').value;
-
     if (entrada.trim() === ""){
-        alert("Ingrese un nombre")
+        alert("Por favor, inserte un nombre")
     }
     else{
         amigos.push(entrada);
-
-        let lista = document.getElementById("listaAmigos");
-        let lista2 = document.createElement("li");
-
-        lista2.textContent = entrada;
-
-        lista.appendChild(lista2)
-
+        
+        imprimirLista();
         document.getElementById("amigo").value = "";
-    }
-    
-
-    
-    
+        
+    }   
 }
+
     
