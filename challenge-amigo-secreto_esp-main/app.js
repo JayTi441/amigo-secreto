@@ -34,17 +34,13 @@ function sortearAmigo(){
         let numero = Math.floor(Math.random()*amigos.length);
         console.log(numero)
         for (let i = 0; i < amigos.length; i++) {
-            
             if(numero==i){
                 amigo_sorteado = amigos[i];
                 console.log(amigo_sorteado)
                 lista.innerHTML = "";
-                res.innerHTML = '<li> El amigo secreto sorteado es: '+amigo_sorteado+'</li>'
-                 
+                res.innerHTML = '<li> El amigo secreto sorteado es: '+amigo_sorteado+'</li>'    
             }
-            
         }
-        
     }
     else{
         alert("Agrega un amigo")
