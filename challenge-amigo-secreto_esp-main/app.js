@@ -17,4 +17,16 @@ function agregarAmigo(){
     }   
 }
 
+function imprimirLista(){
+        lista.innerHTML = "";
+
+        for (let i = 0; i < amigos.length; i++) {
+            let nueva_lista = document.createElement("li");
+            nueva_lista.textContent = amigos[i];
+            lista.appendChild(nueva_lista)
+            
+        }
+
+}
+
     
